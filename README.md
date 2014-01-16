@@ -10,6 +10,7 @@ vagrant up
 bundle exec knife solo cook centos
 
 ssh centos
+rbenv global 2.1.0
 git clone git@your-rails-app
 cd your-rails-app
 bundle install
