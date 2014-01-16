@@ -35,8 +35,3 @@ rbenv_ruby "2.1.0"
     ruby_version "2.1.0"
   end
 end
-
-#nodebrew do
-#  ref 'stable'
-#  user 'vagrant'
-#end

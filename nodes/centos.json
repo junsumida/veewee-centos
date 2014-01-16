@@ -19,8 +19,8 @@
         "recipe[ntp]",
         "recipe[rbenv::default]",
         "recipe[rbenv::ruby_build]",
-        "recipe[devbase]",
-        "recipe[nodebrew]"
+        "recipe[nodebrew]",
+        "recipe[devbase]"
     ]
 }
 
