@@ -35,7 +35,3 @@ rbenv_ruby "2.1.0"
     ruby_version "2.1.0"
   end
 end
-
-execute "yum update" do
-  command "yum -y update"
-end
