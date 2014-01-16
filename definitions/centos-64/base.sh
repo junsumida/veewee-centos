@@ -12,7 +12,7 @@ EOM
 
 yum -y install yum-plugin-fastestmirror
 
-cat > /etc/yum/pluginconf.d/fastestmirror.conf << EOC
+cat >> /etc/yum/pluginconf.d/fastestmirror.conf << EOC
 include_only=.jp
 EOC
 
