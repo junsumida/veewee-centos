@@ -11,18 +11,7 @@
     },
     "devbase": {
         "user": "vagrant",
-        "group": "vagrant",
-        "vimplugins": [
-            "vim-scripts/yanktmp.vim",
-            "vim-scripts/hybrid.vim",
-            "itchyny/lightline.vim",
-            "mattn/emmet-vim",
-            "scrooloose/nerdtree",
-            "Shougo/neobundle.vim",
-            "Shougo/unite.vim",
-            "Shougo/neocomplcache",
-            "Shougo/neosnippet"
-        ]
+        "group": "vagrant"
     },
     "run_list":[
         "recipe[git]",
@@ -30,7 +19,8 @@
         "recipe[ntp]",
         "recipe[rbenv::default]",
         "recipe[rbenv::ruby_build]",
-        "recipe[devbase]"
+        "recipe[devbase]",
+        "recipe[nodebrew]"
     ]
 }
 

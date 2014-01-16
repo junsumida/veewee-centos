@@ -12,6 +12,9 @@
     "rbenv": {
       "locked_version": "1.7.1"
     },
+    "nodebrew": {
+      "locked_version": "0.1.0"
+    },
     "dmg": {
       "locked_version": "2.1.2"
     },
