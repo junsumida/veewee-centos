@@ -2,14 +2,6 @@
   "name": "database",
   "json_class": "Chef::Role",
   "description": "installation of databases",
-  "default_attributes": {
-    "mongodb": {
-      "platform_family": "rhel",
-      "package_name": "mongo-10gen-server",
-      "package_version": "2.4.9",
-      "options": "--nogpgcheck"
-    }
-  },
   "run_list": [
       "recipe[mongodb::10gen_repo]",
       "recipe[mongodb::default]"
