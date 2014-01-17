@@ -35,5 +35,3 @@ rbenv_ruby "2.1.0"
     ruby_version "2.1.0"
   end
 end
-
-include_recipe "mongodb::default"

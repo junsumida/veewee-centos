@@ -18,11 +18,6 @@
       "version": "0.10.24",
       "npm": "1.3.21"
     },
-    "mongodb": {
-      "platform_family": "rhel",
-      "package_name": "mongo-10gen-server",
-      "options": "--nogpgcheck"
-    },
     "run_list":[
         "recipe[git]",
         "recipe[build-essential]",
@@ -30,7 +25,7 @@
         "recipe[rbenv::default]",
         "recipe[rbenv::ruby_build]",
         "recipe[nodejs]",
-        "recipe[mongodb::10gen_repo]",
+        "role[database]",
         "recipe[devbase]"
     ]
 }
