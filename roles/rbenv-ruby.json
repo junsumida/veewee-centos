@@ -2,18 +2,8 @@
   "name": "rbenv-ruby",
   "json_class": "Chef::Role",
   "description": "installation of rbenv and ruby",
-  "default_attirubutes": {
-    "rbenv": {
-        "user": "vagrant",
-        "group": "vagrant",
-        "group_users": ["vagrant"],
-        "install_prefix": "/home/vagrant",
-        "root_path": "/home/vagrant/.rbenv",
-        "global": "2.1.0"
-    }
-  },
   "run_list": [
-      "recipe[rbenv::default]",
-      "recipe[rbenv::ruby_build]"
+    "recipe[rbenv::default]",
+    "recipe[rbenv::ruby_build]"
   ]
 }
