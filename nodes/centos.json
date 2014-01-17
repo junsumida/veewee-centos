@@ -6,10 +6,6 @@
         "user": "vagrant",
         "group": "vagrant"
     },
-    "nodejs": {
-      "version": "0.10.24",
-      "npm": "1.3.21"
-    },
     "rbenv": {
         "user": "vagrant",
         "group": "vagrant",
@@ -22,7 +18,7 @@
         "recipe[git]",
         "recipe[build-essential]",
         "recipe[ntp]",
-        "recipe[nodejs]",
+        "role[nodejs]",
         "role[database]",
         "role[rbenv-ruby]",
         "recipe[devbase]"
