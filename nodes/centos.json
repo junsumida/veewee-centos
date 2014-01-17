@@ -2,14 +2,6 @@
     "ntp": {
         "servers": ["ntp.nict.jp", "ntp.jst.mfeed.ad.jp"]
     },
-    "rbenv": {
-        "user": "vagrant",
-        "group": "vagrant",
-        "group_users": ["vagrant"],
-        "install_prefix": "/home/vagrant",
-        "root_path": "/home/vagrant/.rbenv",
-        "global": "2.1.0"
-    },
     "devbase": {
         "user": "vagrant",
         "group": "vagrant"
@@ -22,10 +14,9 @@
         "recipe[git]",
         "recipe[build-essential]",
         "recipe[ntp]",
-        "recipe[rbenv::default]",
-        "recipe[rbenv::ruby_build]",
         "recipe[nodejs]",
         "role[database]",
+        "role[rbenv-ruby]",
         "recipe[devbase]"
     ]
 }
